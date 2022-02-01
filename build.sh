@@ -7,7 +7,7 @@
 # Toolchain Path
 #
 ClangPath=$(pwd)/compiler/clang # Tempat lu clone clang nya, misal $(pwd)/proton
-KernelPath=$(pwd)/lancelot# Tempat dimana lu clone kernel nya, misal $(pwd)/mt6768-kermel
+KernelPath=$(pwd)/lancelot # Tempat dimana lu clone kernel nya, misal $(pwd)/mt6768-kermel
 
 
 #
