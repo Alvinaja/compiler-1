@@ -7,14 +7,14 @@
 # Toolchain Path
 #
 ClangPath=$(pwd)/clang 
-KernelPath=$(pwd)/kernel 
+KernelPath=$(pwd)/kranul 
 
 #
 # Main
 #
 export TZ="Asia/Jakarta"
 export KERNELNAME=VoidKernel 
-export TG_CHAT_ID= 
+export TG_CHAT_ID=-1001305778995 
 export TG_TOKEN=5214980742:AAEoE3NI9CWWsKUDQzZnADHw5v773tGzd7k 
 export KBUILD_BUILD_USER=VoidLord 
 export KBUILD_BUILD_HOST=termos 
@@ -43,7 +43,7 @@ tg_post_msg() {
 #
 function compile() {
 cd $KernelPath
-tg_post_msg "<b>Sedang MengCompile...🤙</b>"
+tg_post_msg "Nama Kernel:$KERNELNAME""|""User:$KBUILD_BUILD_USER""|""Host:$KBUILD_BUILD_HOST""|""Tanggal:$DATE""|""<b>Sedang MengCompile...🤙</b>" \
 make -j$(nproc) O=out ARCH=arm64 lancelot_defconfig
 make -j$(nproc) ARCH=arm64 O=out \
     CC=${ClangPath}/bin/clang \
