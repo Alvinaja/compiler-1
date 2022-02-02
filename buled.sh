@@ -7,7 +7,12 @@
 # Toolchain Path
 #
 ClangPath=$(pwd)/clang 
-KernelPath=$(pwd)/kranul 
+KernelPath=$(pwd)/kernel 
+
+
+# clone
+git clone --depth=1 https://github.com/CincauEXE/android_kernel_xiaomi_mt6768-1 -b eleven $KernelPath
+git clone --depth=1 https://github.com/kdrag0n/proton-clang $ClangPath
 
 #
 # Main
@@ -17,7 +22,7 @@ export KERNELNAME=VoidKernel
 export TG_CHAT_ID=-1001305778995 
 export TG_TOKEN=5214980742:AAEoE3NI9CWWsKUDQzZnADHw5v773tGzd7k 
 export KBUILD_BUILD_USER=VoidLord 
-export KBUILD_BUILD_HOST=termos 
+export KBUILD_BUILD_HOST=SerberGratisanGoogle 
 export DATE=$(date "+%m%d")
 export HASH=$(git rev-parse --short HEAD)
 
@@ -72,7 +77,7 @@ function pushdoc() {
         -F chat_id="$TG_CHAT_ID" \
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html" \
-        -F caption="VoidLord Kernel"
+        -F caption="VoidKernel"
 }
 
 
