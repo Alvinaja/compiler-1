@@ -11,7 +11,7 @@ KernelPath=$(pwd)/kernel
 
 
 # clone
-git clone --depth=1 https://github.com/01soni247/205 -b main $KernelPath
+git clone --depth=1 https://github.com/Redmi-MT6768/android_kernel_xiaomi_mt6768 -b twelve $KernelPath
 git clone --depth=1 https://github.com/kdrag0n/proton-clang $ClangPath
 
 #
