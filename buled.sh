@@ -11,18 +11,18 @@ KernelPath=$(pwd)/kernel
 
 
 # clone
-git clone --depth=1 https://github.com/CincauEXE/android_kernel_xiaomi_mt6768-1 -b eleven $KernelPath
+git clone --depth=1 https://github.com/01soni247/205 -b main $KernelPath
 git clone --depth=1 https://github.com/kdrag0n/proton-clang $ClangPath
 
 #
 # Main
 #
 export TZ="Asia/Jakarta"
-export KERNELNAME=VoidKernel 
-export TG_CHAT_ID=-1001305778995 
-export TG_TOKEN=5214980742:AAEoE3NI9CWWsKUDQzZnADHw5v773tGzd7k 
-export KBUILD_BUILD_USER=VoidLord 
-export KBUILD_BUILD_HOST=SerberGratisanGoogle 
+export KERNELNAME=JRE205-Kernel 
+export TG_CHAT_ID=1689573524 
+export TG_TOKEN=1689573524:AAHGMEDNkEpxSEc_c_rgwqaQ762n_dWJjJs
+export KBUILD_BUILD_USER=@DreamersGo
+export KBUILD_BUILD_HOST=ArmG80 
 export DATE=$(date "+%m%d")
 export HASH=$(git rev-parse --short HEAD)
 
